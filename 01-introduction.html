@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<!--Scripts can be placed in the <head> section of an HTML page -->
+</head>
+<body>
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<!-- a JavaScript function is placed in the <body> section of an HTML page.
+-->
+</body>
+<script src="myScript.js"></script>
+<!--EXTERNAL SCRIPT-->
+
+<!--Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.-->
+</html>
+
+<!--Scripts can also be placed in external files:
+
+External file: myScript.js
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+External JavaScript Advantages
+Placing scripts in external files has some advantages:
+
+It separates HTML and code
+It makes HTML and JavaScript easier to read and maintain
+Cached JavaScript files can speed up page loads
+
+-->
+
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+
+<script src="/js/myScript.js"></script>
+
+<script src="myScript.js"></script>
+
+<!--
+External References
+An external script can be referenced in 3 different ways:
+
+With a full URL (a full web address)
+With a file path (like /js/)
+Without any path
+-->
