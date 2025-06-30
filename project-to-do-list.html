@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple To-Do List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    li {
+      background: #f2f2f2;
+      margin: 5px 0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .done {
+      text-decoration: line-through;
+      color: gray;}
+</style>
+</head>
+<body class='font-sans max-w-md mt-12 mb-12 mx-auto flex  flex-col  h-1/2 bg-blue-200 px-4' >
+
+  <h2 class="text-red-900 font-serif font-900 text-xl mb-3" >My To-Do List</h2>
+
+  <input type="text" id="todoInput" placeholder="Enter a new task" class="p-2.5 my-12.5 mx-0 w-full " />
+
+  <button onclick="addTask()" class="p-2.5 my-12.5 mx-0 w-full bg-red-900 mt-5">Add Task</button>
+
+  <ul id="todoList" class="list-none p-0"></ul>
+
+  <script>
+   function addTask() {
+  let input = document.getElementById("todoInput");
+  let task = input.value.trim();
+
+  if (task === "") {
+    alert("Please enter a task!");
+    return;
+  }
+
+  let li = document.createElement("li");
+  li.innerHTML = `
+    <span onclick="toggleDone(this)">${task}</span>
+    <button onclick="removeTask(this)">❌</button>
+  `;
+
+  document.getElementById("todoList").appendChild(li);
+  input.value = "";
+}
+
+function toggleDone(span) {
+  span.classList.toggle("done");
+}
+
+function removeTask(button) {
+  let li = button.parentElement;
+  li.remove();
+}
+  </script>
+</body>
+</html>
