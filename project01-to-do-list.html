@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple To-Do List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    li {
+      background: #f2f2f2;
+      margin: 5px 0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    span{
+      cursor: pointer;
+    }
+    .done {
+      text-decoration: line-through;
+      color: gray;}
+</style>
+</head>
+<body class='font-sans max-w-md mt-12 mb-12 mx-auto flex  flex-col  h-1/2 bg-blue-200 px-4' >
+
+  <h2 class="text-red-900 font-serif font-900 text-xl mb-3" >My To-Do List</h2>
+
+  <input type="text" id="todoInput" placeholder="Enter a new task" class="p-2.5 my-12.5 mx-0 w-full " />
+
+  <button onclick="addTask()" class="p-2.5 my-12.5 mx-0 w-full bg-red-900 mt-5">Add Task</button>
+
+  <ul id="todoList" class="list-none p-0"></ul>
+
+  <script>
+
+    //ADD TASK FUNCTION APARTMENT
+    //When add task is clicked this runs
+   function addTask() {
+  let input = document.getElementById("todoInput");
+  //To create a function named addTask. This runs when "Add Task" button is clicked.
+  //To grab the input element
+
+  let task = input.value.trim();
+///input.value gets what the user typed (what the user type)
+//.trim() removes any empty spaces before/after the text.
+//e.g "  buy milk" it becomes "buy milk"
+
+  if (task === "") {
+    alert("Please enter a task!");
+    return;
+  }
+  else{
+    alert("Task added!");
+  }
+//If the box is empty, It will show an alert message box. 
+// return; stops the function from continuing.
+//(if the user didn't type anything, this stop everything with an alert)
+//or else the browser returns task added in the alert button
+
+  let li = document.createElement("li");
+  //To Create a new Element <li> (for the list item). Adding to the task list
+//something like this <li></li> in HTML
+
+  li.innerHTML = `
+    <span onclick="toggleDone(this)">${task}</span>
+    <button onclick="removeTask(this)">❌</button>`;
+//<li> contain a <span> that shows the task and a button that deletes tasks
+//when the task is added it calls toggleDone()
+// when the delete button is clicked it calls removeTask()
+
+/*Something like this in HTML:
+<li>
+  <span onclick="toggleDone(this)"> Buy Milk</span>
+  <button onclick="removeTask(this)">❌</button>
+</li>
+*/
+/*WHAT IT MEANS:
+toggleDone(this) - When user clicks the text, it marks it as done (strike-through).
+
+removeTask(this) - When user clicks ❌, it deletes the task.
+*/
+
+  document.getElementById("todoList").appendChild(li);
+//Find ID with todoList then Add the new <li> to it
+// MAKES THE LIST APPEARS IN THE BROWSER
+/*So it appears like this
+<ul id="todoList">
+  <li>Buy bread ❌</li>
+</ul
+  */
+
+  input.value = "";
+  //Clear the input box after adding the task
+  //RESET THE EMPTY BOX - EMPTY IT
+}
+    //END OF ADD TASK FUNCTION APARTMENT
+
+
+
+     // FUNCTION FOR SPAN - TASK LIST
+function toggleDone(span) {
+  span.classList.toggle("done");
+} //When the task is clicked, it adds or removes the done class.
+//The done class is defined in CSS.
+
+function removeTask(button) {
+  let li = button.parentElement;
+  li.remove();
+} //When you click ❌, this: goes up to the parent <li> then removes that task from the list
+  </script>
+</body>
+</html>
+
+<!--
+NOTES ON JAVASCRIPT
+.appendChild(...) - Is used to add a thing into something else
+
+.textContent="..." - Is u
+sed to change the text
+
+document.getElementById("...00")
+-->
