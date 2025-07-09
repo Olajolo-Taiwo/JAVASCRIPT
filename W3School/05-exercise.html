@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Variable Practice</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 200px;
+    }
+    button{
+      padding: 20px 50px;
+      border: none;
+      background-color: purple;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  </style>
+</head>  
+<body>
+<!--NAME-->
+<button id="viewName">VIEW NAME</button>
+<p id="nameOutput"></p>
+
+<!--AGE-->
+<button id="age">VIEW AGE</button>
+<p id="ageOutput"></p>
+
+<!--STATUS-->
+<button id="status">VIEW STATUS</button> 
+<p id="statusOutput"></p>
+</body>
+
+<script>
+//VARIABLES DECLARE
+  let userName = 'Timilehin';
+  let age = 20;
+  let isStudent = false;
+
+  //VIEW NAME
+  document.getElementById('viewName').onclick = function(){
+    document.getElementById('nameOutput').innerText = userName;
+  };
+
+  //VIEW AGE
+  document.getElementById('age').onclick = function (){
+    document.getElementById('ageOutput').innerHTML = age;
+  };
+
+  //VIEW STATUS
+  document.getElementById('status').onclick = function (){
+    document.getElementById('statusOutput').innerText = isStudent ? "Student" : "Not a student";
+  };
+
+
+// Explanation for condition
+condition ? valueIfTrue : valueIfFalse
+// if isStudent is true, it returns student
+//if isStudent is false, it returns "Not a student"
+/*if (isStudent){
+  return "Student"
+}
+else{
+  return "Not a student"
+}
+  */
+
+  //Explanation for function
+  onclick = function (){'...'}
+  //when the element is clicked, run the function inside the curly braces
+
+
+  //FURTHER EXERCISE
+
+  //exercise 1
+  let score = 10;
+  score = 15;
+
+  //exercise 2
+  const country = "Nigeria";
+
+  //exercise 3
+  const firstName = "Timilehin";
+  const lastName = "Olajolo";
+  const fullName = firstName + " " + lastName;
+  console.log(fullName);
+</script>
+</html>

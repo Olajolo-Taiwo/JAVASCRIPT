@@ -38,3 +38,23 @@ const z = x + y;
 const price1 = 5;
 const price2 = 6;
 let total = price1 + price2;
+
+//<p id="demo"></p>
+let carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+
+let person = "John Doe",
+catName = "Volvo",
+price = 200;
+
+//Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library.
+//In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements. In jQuery $("p"); means "select all p elements".
+let $ = "Hello World";
+let $$$ = 2;
+let $myMoney = 5;
+
+//Using the underscore is not very common in JavaScript, but a convention among professional programmers is to use it as an alias for "private (hidden)" variables.
+let _lastName = "Johnson";
+let _x = 2;
+let _100 = 5;
+
