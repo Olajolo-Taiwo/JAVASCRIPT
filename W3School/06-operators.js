@@ -17,17 +17,63 @@ used to perform arithmetic on number
 let a = 3;
 let x = (100 + 50) * a;
 /*
-+ addition
-- subtraction
-* multiplication
-** exponentiation
-/ division
-% modulus (division remainder)
-++ increment
--- decrement
++ addition (The addition operator (+) adds numbers)
+- subtraction (The subtraction operator (-) subtracts numbers.
+)
+* multiplication (The multiplication operator (*) multiplies numbers.)
+** exponentiation (The exponentiation operator (**) raises the first operand to the power of the second operand.
+)*/
+let l = 5;
+let m = l ** 2;
+//same as
+let //l = 5;
+//let m = Math.pow(l,2);
+/*
+/ division (The division operator (/) divides numbers.
+)
+% modulus (division remainder -The modulus operator (%) returns the division remainder.)
+++ increment (The increment operator (++) increments numbers)
+*/ example
+let h = 5;
+h++;
+let f = h;
+/*
+-- decrement (The decrement operator (--) decrements numbers.
+)
 */
+let i = 5;
+i--;
+let j = i;
 
+//EXPLANATION
+let u = 100 + 50;
+//or variables:
+let v = a + b;
+//or expressions:
+let w = (100 + 50) * a;
+//NOTE ON ARITHMETIC
+//The numbers (in an arithmetic operation) are called operands.
+//The operation (to be performed between the two operands) is defined by an operator.
+100(Operand)	+(Operator) 	(60)(Operand)
+//Operator Precedence (Operator precedence describes the order in which operations are performed in an arithmetic expression.)
+let g = 100 + 50 * 3;
+/* 
+Is the result of example above the same as 150 * 3, or is it the same as 100 + 150?
 
+Is the addition or the multiplication done first?
+
+As in traditional school mathematics, the multiplication is done first.
+
+Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+
+And (as in school mathematics) the precedence can be changed by using parentheses.
+
+When using parentheses, the operations inside the parentheses are computed first:
+*/
+let k = (100 + 50) * 3;
+//When many operations have the same precedence (like addition and subtraction or multiplication and division), they are computed from left to right:
+let n = 100 + 50 - 3;
+let p = 100 / 50 * 3;
 /* ASSIGNMENT OPERATORS 
 Assignment operators assign values to JavaScript variables.
 */
