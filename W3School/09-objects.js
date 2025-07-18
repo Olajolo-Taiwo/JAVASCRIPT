@@ -31,12 +31,12 @@ car.start(), car.drive(), car.brake(), car.stop()
 //This code assigns a simple value (Fiat) to a variable named car:
 
 Example
-let car = "Fiat";
+//let car = "Fiat";
 //Objects are variables too. But objects can contain many values.
 
 //This code assigns many values (Fiat, 500, white) to an object named car:
 Example
-const car = {type:"Fiat", model:"500", color:"white"};
+//const car = {type:"Fiat", model:"500", color:"white"};
 //Note:It is a common practice to declare objects with the const keyword.
 
 //How to Define a JavaScript Object
@@ -222,4 +222,6 @@ const x = person;
 // This will change age in person:
 x.age = 10;
 Note:
-You will learn a lot more about objects in the following chapters.
+You will learn a lot more about objects in the following chapters
+
+*/
