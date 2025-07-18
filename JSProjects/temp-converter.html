@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise 4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-500 min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-md space-y-6">
+    <h2 class="text-3xl font-semibold text-center text-purple-700">Temperature Converter</h2>
+
+    <!-- FAHRENHEIT CONVERSION -->
+    <div>
+      <input type="number" id="celsiusInput" placeholder="enter celsius value" class="w-full p-2 border border-gray-300 rounded-md mb-2">
+      <button onclick="fahrenheitButton()" class="bg-purple-900 text-white px-4 py-2 rounded rounded hover:bg-red-700 w-full">
+        Convert to Fahrenheit
+      </button>
+      <p id="fahrenheitOutput" class="mt-2 text-red-700 font-medium"></p>
+    </div>
+        <!-- CELSIUS CONVERSION -->
+    <div>
+      <input type="number" id="fahrenheitInput" placeholder="enter fahrenheit value"
+      class="w-full p-2 border border-gray-300 rounded-md mb-2">
+      <button onclick="celsiusButton()" 
+              class="bg-purple-900 text-white px-4 py-2 rounded hover:bg-red-700 w-full">
+        Convert to Celsius
+      </button>
+      <p id="celsiusOutput" class="mt-2 text-red-700 font-medium"></p>
+    </div>
+  </div>
+
+  <script>
+    function FahrenheitConvert(celsius) {
+      let celsiusResult = (celsius * 9 / 5) + 32;
+      return celsiusResult
+    }
+
+    function CelsiusConvert(fahrenheit) {
+      let fahrenheitResult = (fahrenheit - 32) * (5 / 9);
+      return fahrenheitResult;
+    }
+
+    function fahrenheitButton() {
+      let cel = document.getElementById("celsiusInput").value;
+      let fah = FahrenheitConvert(cel);
+      document.getElementById("fahrenheitOutput").textContent = cel + "°C"  + "and" + fah + "°F";
+    }
+
+    function celsiusButton() {
+      let fah = document.getElementById("fahrenheitInput").value;
+      let cel = CelsiusConvert(fah);
+      document.getElementById("celsiusOutput").textContent = fah + "°F" + "and" + cel + "°C";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>To Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans flex items-center justify-center py-10 bg-purple-200">
+
+  <div class="bg-purple-500 shadow-xl rounded-2xl w-full max-w-md p-6">
+    <h2 class="text-3xl font-extrabold mb-6 text-center tracking-wide text-white">To Do List</h2>
+
+    <div class="flex items-center gap-2 mb-4">
+      <input
+        type="text"
+        id="todoInput"
+        placeholder="Add task"
+        class="flex-grow p-3 rounded-lg border border-gray-300 shadow-inner focus:outline-none focus:ring-2 focus:ring-red-400 transition"
+      />
+      <button
+        id="addTasks"
+        class="bg-black text-white px-4 py-3 rounded-lg hover:border transition-all shadow-md"
+      >
+        +
+      </button>
+    </div>
+
+    <ul id="todoList" class="space-y-3"></ul>
+  </div>
+
+  <script>
+    function addTask() {
+      let input = document.getElementById("todoInput");
+      let task = input.value.trim();
+
+      if (task === "") {
+        alert("Please enter a task!");
+        return;
+      }
+
+      let li = document.createElement("li");
+      li.className = "flex justify-between items-center bg-gray-50 border border-gray-200 px-4 py-3 rounded-lg shadow-sm hover:shadow-md transition-shadow";
+
+      li.innerHTML = `
+        <span onclick="toggleDone(this)" class="cursor-pointer transition-colors duration-200 flex-grow">${task}</span>
+        <div class="flex items-center gap-2 ml-4">
+          <button onclick="editTask(this)" class="text-blue-600 hover:text-blue-800 text-sm">Edit</button>
+          <button onclick="removeTask(this)" class="text-red-600 text-l hover:text-red-800 text-xl">Delete</button>
+        </div>
+      `;
+
+      document.getElementById("todoList").appendChild(li);
+      input.value = "";
+    }
+
+    function toggleDone(span) {
+      span.classList.toggle("line-through");
+      span.classList.toggle("text-gray-400");
+    }
+
+    function removeTask(button) {
+      let li = button.closest("li");
+      li.classList.add("opacity-50", "translate-x-2", "transition", "duration-300");
+      setTimeout(() => li.remove(), 200);
+    }
+
+    function editTask(button) {
+      let li = button.closest("li");
+      let spanOrInput = li.querySelector("span, input");
+
+      if (spanOrInput.tagName === "SPAN") {
+
+        let currentText = spanOrInput.textContent;
+        spanOrInput.outerHTML = `<input type="text" class="flex-grow p-1 border border-gray-300 rounded focus:outline-none" value="${currentText}" />`;
+        button.textContent = "Save";
+      } else {
+
+
+        let updatedText = spanOrInput.value.trim();
+        if (updatedText === "") {
+          alert("Add Task");
+          return;
+        }
+        spanOrInput.outerHTML = `<span onclick="toggleDone(this)" class="cursor-pointer transition-colors duration-200 flex-grow">${updatedText}</span>`;
+        button.textContent = "Edit";
+      }
+    }
+
+    document.getElementById("addTasks").onclick = addTask;
+  </script>
+</body>
+</html>
