@@ -1,0 +1,29 @@
+<html>
+<body>
+
+  <input id="inputBox" type="text">
+  <ul id="newList">
+    </ul>
+    <button id="buttonBox">
+    Add text
+  </button>
+  </body>
+  <script>
+    function addText(){
+    let input = document.getElementById('inputBox');
+    let typedText = input.value;
+    let li = document.createElement('li');
+    li.innerHTML = `
+    <span>${typedText}</span>
+    <button onclick="removeText(this)">#</button>
+    `;
+    document.getElementById('newList').appendChild(li);
+    input.value="";
+    }
+    let taskAdded = document.getElementById('buttonBox').onclick = addText;
+
+    function removeText(button){
+      let li = button.parentE
+    }
+  </script>
+</html>
