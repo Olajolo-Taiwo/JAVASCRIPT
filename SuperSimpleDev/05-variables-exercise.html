@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VARIABLE PRACTICE</title>
+  </head>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    button{
+      padding: 20px 40px;
+      border: 2px solid purple;
+      background-color: white;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+    button:hover{
+      background-color: purple;
+    }
+    h3{
+      color: purple;
+      font-size: 3em;
+      font-family: cursive;
+      font-weight: 900;
+    }
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 30px;
+    }
+    span{
+      font-weight: 900;
+      color: red;
+    }
+  </style>
+  <body>
+    <h3>Cart Quantity</h3>
+    <button onclick="
+    cartQuantity = cartQuantity;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">Show Quantity</button>
+    <button
+    onclick="
+    cartQuantity = cartQuantity + 1;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    "
+    >Add to Cart</button>
+    <button
+    onclick="
+    cartQuantity = cartQuantity + 2;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    "
+    >+2</button>
+    <button
+    onclick="
+    cartQuantity = cartQuantity + 3;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">+3</button>
+    <button
+    onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset')
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">Reset Cart</button>
+
+    <p><span>Note: </span>The Cart result is displayed in the console, thank you!</p>
+
+    <script>
+      let cartQuantity = 0;  
+      
+      
+      //JS NAMING 
+      camelCase //standard naming convection
+      //others
+      PascalCase 
+      //kebab-case //not used in Js
+      snake_case //not really used in js 
+
+      //ways to create variable in Js
+      //const //cant changed it value later - constant
+      //let - flexible and can be reassigned
+    //var - the originally way but it's old. it's flexible like let but does not follow the rule of scope
+    //typeof can be used with variables, to check the type of value saved in a variable
+    </script>
+  </body>
+</html>
+
+
+
+<!--
+SHORTCUT FOR THE SCRIPT
+    <button
+    onclick="
+    cartQuantity += 1;
+    or cartQuantity++
+    console.log(`Cart quantity: ${cartQuantity}`)
+    "
+    >Add to Cart</button>
+    <button
+    onclick="
+    cartQuantity +=2;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    "
+    >+2</button>
+    <button
+    onclick="
+    cartQuantity +=3;
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">+3</button>
+    <button
+    onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset')
+    console.log(`Cart quantity: ${cartQuantity}`)
+    ">Reset Cart</button>
+
+    <p><span>Note: </span>The Cart result is displayed in the console, thank you!</p>
+
+    <script>
+      let cartQuantity = 0;    
+    </script>
+  </body>
+</html>
+-->
