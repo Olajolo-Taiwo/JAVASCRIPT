@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<input id="ageInput" type="number" onchange="
+  let personAge = parseInt(this.value); // to convert a string to a number
+let result = '';
+if (personAge >=  1 && personAge <=12){
+  result = 'Kid';
+}
+else if (personAge >=  13 && personAge <=17){
+  result = 'Teenager';
+}
+else if (personAge >=  18 && personAge <=34){
+  result = 'Youth';
+}
+else if (personAge >=  35 && personAge <= 64){
+  result = 'Adult';
+}
+else if (personAge >=65 ){
+  result = 'Seniors';
+}
+else { result = 'please enter a valid age';}
+document.getElementById('ageDisplay').innerHTML = result;
+">
+<p id="ageDisplay"></p>
+<script>
+
+</script>
+</body>
+</html>

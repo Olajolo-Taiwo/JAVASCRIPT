@@ -106,8 +106,7 @@ if (result === 'Grace'){
 
 //6j
       const randomNumber = Math.random();
-      const resultt = randomNumber < 0.5 ? 'heads' : 'tails';
+      const result1 = randomNumber < 0.5 ? 'heads' : 'tails';
 
       const guess = 'heads';
-      console.log(guess === resultt ? 'You win!' : 'You lose!');
-
+      console.log(guess === result1 ? 'You win!' : 'You lose!');
