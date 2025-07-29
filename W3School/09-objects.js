@@ -60,7 +60,7 @@ const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 //Spaces and line breaks are not important. An object initializer can span multiple lines:
 
 // Create an Object
-const person = {
+const person1 = {
   firstName: "John",
   lastName: "Doe",
   age: 50,
@@ -68,7 +68,7 @@ const person = {
 };
 
 // Create an Object
-const person = {};
+const person2 = {};
 
 // Add Properties
 person.firstName = "John";
