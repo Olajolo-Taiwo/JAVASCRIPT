@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head><title>DOM - EXERCISES</title></head>
+<body>
+
+<!-- 9A -->
+  <button class="button1" onclick="console.log(document.querySelector('.button1'));">GoodJob</button>
+
+<!-- 9B -->
+  <button class="button2" onclick="console.log(document.querySelector('.button2').innerHTML='done');">GoodJob</button>
+
+<!-- 9C -->
+<br>
+<br>
+<br>
+<button class="headsBtn" onclick="document.querySelector('.outputTxt').innerHTML = 'You chose: Head';">Heads</button>
+<button class="tailsBtn" onclick="document.querySelector('.outputTxt').innerHTML = 'You chose: Tail';">Tails</button>
+<p class="outputTxt"></p>
+<script>
+</script>
+
+<!-- 9D -->
+<input class="name1Input">
+<button class="submit1Btn" onclick="input1Fun()">Submit</button>
+<p class="name1Txt"></p>
+<script>
+function input1Fun (){
+const result1 = document.querySelector('.name1Input').value;
+
+document.querySelector('.name1Txt').innerHTML = `Your name is: ${result1}`;
+}
+</script>
+
+<!-- 9E -->
+<input class="name2Input" placeholder="Enter your username" onkeydown="input1Key(event);">
+<button class="submit2Btn" onclick="input2Fun()">Submit</button>
+<p class="name2Txt"></p>
+<script>
+function input2Fun(){
+const result2 = document.querySelector('.name2Input').value;
+document.querySelector('.name2Txt').innerHTML = `Your name is: ${result2}`;
+}
+function input1Key(event){
+if (event.key === 'Enter'){input2Fun();}}
+</script>
+
+<!-- 9G -->
+<p>Amazon Shipping Calculator</p>
+<input type="number" class="orderInput" placeholder="Cost of Order" onkeydown="key3Down(event)"> 
+<button onclick="inputCalculation();">Calculate</button>
+<p class="input3Text"></p>
+<script>
+function inputCalculation(){
+const userInput = Number(document.querySelector ('.orderInput').value);
+let result3 = '';
+if (userInput <= 40){result = (userInput * 100) + 1000;} 
+else {result3 = (userInput * 100);}
+
+document.querySelector('.input3Text').innerHTML= `Cost: $${Math.round(result/100)}`;
+}
+function key3Down(event){
+if (event.key === 'Enter') { inputCalculation();}
+}
+</script>
+
+<!-- 9H -->
+<input class="inputTxt" onkeyup="
+const output = document.querySelector('.inputTxt').value;
+document.querySelector('.displayedTxt').innerHTML = output;
+">
+<p class="displayedTxt"></p>
+</body>
+</html>

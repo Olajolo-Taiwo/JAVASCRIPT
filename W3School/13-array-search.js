@@ -1,9 +1,4 @@
 /**
- * Search field
-Search...
-HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS DSA TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AI R GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE INTRO TO PROGRAMMING BASH RUST 
-
-JavaScript Array Search
 Array Search Methods
 Array indexOf()
 Array lastIndexOf()
@@ -146,83 +141,4 @@ JavaScript 2023 is supported in all modern browsers since July 2023:
 
 Chrome 110	Edge 110	Firefox 115	Safari 16.4	Opera 96
 Feb 2023	Feb 2023	Jul 2023	Mar 2023	May 2023
-Complete JavaScript Reference
-For a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:
-
-W3Schools' Full JavaScript Reference.
-
-The reference inludes all JavaScript updates from 1999 to 2025.
-
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-     
-ADVERTISEMENT
-
-PLUS
-SPACES
-GET CERTIFIED
-FOR TEACHERS
-FOR BUSINESS
-CONTACT US
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    
-FORUM ABOUT ACADEMY
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
  */

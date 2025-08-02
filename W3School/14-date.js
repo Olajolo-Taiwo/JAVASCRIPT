@@ -1,9 +1,4 @@
-/**
- * Search field
-Search...
-HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS DSA TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AI R GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE INTRO TO PROGRAMMING BASH RUST 
-
-JavaScript Date Objects
+/*JavaScript Date Objects
 JavaScript Date Objects let us work with dates:
 
 Fri Jul 18 2025 09:01:16 GMT+0100 (West Africa Standard Time)
@@ -176,95 +171,11 @@ The toISOString() method converts a date to a string using the ISO standard:
 Example
 const d = new Date();
 d.toISOString();
-Complete JavaScript Date Reference
-For a complete Date reference, go to our:
-
-Complete JavaScript Date Reference.
-
-The reference contains descriptions and examples of all Date properties and methods.
-
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-     
-ADVERTISEMENT
-
-PLUS
-SPACES
-GET CERTIFIED
-FOR TEACHERS
-FOR BUSINESS
-CONTACT US
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    
-FORUM ABOUT ACADEMY
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+*/
 
 
 
-
-
-
-
-
-Search field
-Search...
-HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS DSA TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AI R GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE INTRO TO PROGRAMMING BASH RUST 
+/*
 JavaScript Date Formats
 JavaScript Date Input
 There are generally 3 types of JavaScript date input formats:
@@ -377,101 +288,11 @@ You can then use the number of milliseconds to convert it to a date object:
 Example
 let msec = Date.parse("March 21, 2012");
 const d = new Date(msec);
-Complete JavaScript Date Reference
-For a complete Date reference, go to our:
-
-Complete JavaScript Date Reference.
-
-The reference contains descriptions and examples of all Date properties and methods.
-
-Exercise
-?
-What date is created with the following code:
-const d = new Date('2024');.
-
-
-A random date in 2024
-January 1. 2024
-December 31. 2024
-
-
-Get Certified
-COLOR PICKER
-colorpicker
-     
-
-PLUS
-SPACES
-GET CERTIFIED
-FOR TEACHERS
-FOR BUSINESS
-CONTACT US
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    
-FORUM ABOUT ACADEMY
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+*/
 
 
 
-
-
-Search field
-Search...
-HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS DSA TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AI R GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE INTRO TO PROGRAMMING BASH RUST 
-JavaScript Get Date Methods
+/*
 The new Date() Constructor
 In JavaScript, date objects are created with new Date().
 
@@ -653,96 +474,17 @@ UTC time is the same as GMT (Greenwich Mean Time).
 The difference between Local time and UTC time can be up to 24 hours.
 
 
-
-
-
 The getTimezoneOffset() Method
 The getTimezoneOffset() method returns the difference (in minutes) between local time an UTC time:
 
 Example
 let diff = d.getTimezoneOffset();
-Complete JavaScript Date Reference
-For a complete Date reference, go to our:
-
-Complete JavaScript Date Reference.
-
-The reference contains descriptions and examples of all Date properties and methods.
-
-Get Certified
-COLOR PICKER
-colorpicker
-     
-PLUS
-SPACES
-GET CERTIFIED
-FOR TEACHERS
-FOR BUSINESS
-CONTACT US
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    
-FORUM ABOUT ACADEMY
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+*/
 
 
 
+/*
 
-
-Search field
-Search...
-HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS DSA TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AI R GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE INTRO TO PROGRAMMING BASH RUST 
 JavaScript Set Date Methods
 Set Date methods let you set date values (years, months, days, hours, minutes, seconds, milliseconds) for a Date Object.
 
@@ -831,101 +573,4 @@ if (someday > today) {
 Note
 JavaScript counts months from 0 to 11. January is 0. December is 11.
 
-Complete JavaScript Date Reference
-For a complete Date reference, go to our:
-
-Complete JavaScript Date Reference.
-
-The reference contains descriptions and examples of all Date properties and methods.
-
-Exercise
-?
-What is expected format of the argument in the setDate() method?
-
-
-A number between 1 and 31
-A number between 0 and 30
-A number between 1 and 7
-A number between 0 and 6
-
-Get Certified
-COLOR PICKER
-colorpicker
-     
-PLUS
-SPACES
-GET CERTIFIED
-FOR TEACHERS
-FOR BUSINESS
-CONTACT US
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    
-FORUM ABOUT ACADEMY
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
  */
-
-
-
-
-
-
-
-
-
-
-
-

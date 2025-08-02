@@ -1,9 +1,4 @@
-/**
- * Search field
-Search...
-HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS DSA TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AI R GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE INTRO TO PROGRAMMING BASH RUST 
-
-JavaScript Math Object
+/*JavaScript Math Object
 The Math Object
 The JavaScript Math object allows you to perform mathematical tasks.
 
@@ -156,104 +151,11 @@ Math.log10(x) returns the base 10 logarithm of x.
 How many times must we multiply 10 to get 1000?
 
 Math.log10(1000);
-Complete JavaScript Reference
-For a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:
-
-W3Schools' Full JavaScript Reference.
-
-The reference inludes all JavaScript updates from 1999 to 2025.
-
-Exercise
-?
-What is a correct syntax for rounding down a number to its nearest integer?
-
-
-Math.roundDown(4.9)
-Math.floor(4.9)
-Math.abs(4.9)
-Math.min(4.9)
-
-ADVERTISEMENT
-
-Get Certified
-COLOR PICKER
-colorpicker
-     
-ADVERTISEMENT
-
-PLUS
-SPACES
-GET CERTIFIED
-FOR TEACHERS
-FOR BUSINESS
-CONTACT US
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    
-FORUM ABOUT ACADEMY
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+*/
 
 
 
-
-
-
-
-Search field
-Search...
-HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS DSA TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AI R GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE INTRO TO PROGRAMMING BASH RUST 
+/*
 
 JavaScript Math Reference
 Complete Math Reference
@@ -301,83 +203,5 @@ SQRT2	Returns the square root of 2 (approx. 1.414)
 tan(x)	Returns the tangent of an angle
 tanh(x)	Returns the hyperbolic tangent of a number
 trunc(x)	Returns the integer part of a number (x)
-Complete JavaScript Reference
-For a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:
-
-W3Schools' Full JavaScript Reference.
-
-The reference inludes all JavaScript updates from 1999 to 2025.
-
-
-
-Get Certified
-COLOR PICKER
-colorpicker
-     
-
-PLUS
-SPACES
-GET CERTIFIED
-FOR TEACHERS
-FOR BUSINESS
-CONTACT US
-Top Tutorials
-HTML Tutorial
-CSS Tutorial
-JavaScript Tutorial
-How To Tutorial
-SQL Tutorial
-Python Tutorial
-W3.CSS Tutorial
-Bootstrap Tutorial
-PHP Tutorial
-Java Tutorial
-C++ Tutorial
-jQuery Tutorial
-Top References
-HTML Reference
-CSS Reference
-JavaScript Reference
-SQL Reference
-Python Reference
-W3.CSS Reference
-Bootstrap Reference
-PHP Reference
-HTML Colors
-Java Reference
-Angular Reference
-jQuery Reference
-Top Examples
-HTML Examples
-CSS Examples
-JavaScript Examples
-How To Examples
-SQL Examples
-Python Examples
-W3.CSS Examples
-Bootstrap Examples
-PHP Examples
-Java Examples
-XML Examples
-jQuery Examples
-Get Certified
-HTML Certificate
-CSS Certificate
-JavaScript Certificate
-Front End Certificate
-SQL Certificate
-Python Certificate
-PHP Certificate
-jQuery Certificate
-Java Certificate
-C++ Certificate
-C# Certificate
-XML Certificate
-    
-FORUM ABOUT ACADEMY
-W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
-
-Copyright 1999-2025 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
-
 
  */
