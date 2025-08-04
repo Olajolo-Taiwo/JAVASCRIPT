@@ -1,0 +1,81 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>
+      DOM Practice
+    </title>
+<style>
+
+body{
+font-family: Arial;
+}
+.subButton{
+padding: 8px 12px;
+border: none;
+border-radius:15px;
+cursor: pointer;
+background-color: black;
+color: white;
+}
+.isSubscribed{
+background-color: rgb(228, 227, 227);
+color: black;
+}
+
+.subBtn{
+padding: 10px 12px;
+border: none;
+background-color: green;
+cursor: pointer;
+color: white;
+}
+
+.inputBox{
+padding: 9px 18px;
+border: 1px solid rgb(168, 168, 168);
+color: black;
+}
+.amazon{
+margin-top: 70px;
+}
+</style>
+    </head>
+    <body>
+<p>YouTube Subscribed Button</p>
+<button class="subButton" onclick="subscribe()">Subscribe</button>
+
+<p class="amazon">Amazon Shipping Calculator</p>
+<p>Orders over $40 = FREE shipping </p>
+<input class="inputBox" type="number"  placeholder="Cost of Order" onkeydown="keyDown(event)"> 
+<button class="subBtn" onclick="inputCalculation();">Calculate</button>
+<p class="inputText"></p>
+
+<script>
+
+function subscribe (){
+const result = document.querySelector('.subButton');
+
+if  (result.innerText === 'Subscribe'){result.innerHTML = 'Subscribed';
+result.classList.add('isSubscribed');}
+else {result.innerHTML = 'Subscribe';
+result.classList.remove('isSubscribed');}
+}
+
+function inputCalculation(){
+const userInput = Number(document.querySelector ('Input').value);
+let result = '';
+if (userInput <= 40){result = userInput + 10;} 
+else {result = userInput;}
+
+document.querySelector('.inputText').innerHTML= `Cost: $${result}`;
+}
+
+function keyDown(event){
+if (event.key === 'Enter') { inputCalculation();}
+}
+
+
+</script>
+    </body>
+  </html>
+

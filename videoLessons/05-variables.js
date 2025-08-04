@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>VARIABLE</title>
-</head>
 
-<body>
-<script>
 let calculation = 2 + 2;
 console.log(calculation);
 console.log(calculation + 2);
 or
 let result = calculation;
-</script>
-</body>
-</html>
