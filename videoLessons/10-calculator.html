@@ -4,38 +4,73 @@
   <title>
     DOM - CALCULATOR
   </title>
+<style>
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: black;
+font-weight: 900;
+font-size: 1.5em;
+}
+button{
+background-color: white;
+padding: 15px 20px;
+border: none;
+border-radius:50%;
+color: black;
+font-weight: 900;
+font-size: 1.5em;
+}
+
+div{
+margin-bottom: 10px;
+}
+.calculatorDisplay, .textDisplay
+{color: white; align-items: left;}
+</style>
+
 </head>
 <body>
-  <br><br>
+
+<div>
 <p class="textDisplay"></p>
 <p class="calculatorDisplay"></p>
+</div>
+
+<div>
   <button onclick="updateCalculator('1');">1</button>
   <button onclick="updateCalculator('2');" >2</button>
   <button  onclick="(updateCalculator('3'));">3</button>
   <button onclick="(updateCalculator(' + '));">+</button>
-  <button onclick="
-  calculation = eval(calculation);
-  document.querySelector('.calculatorDisplay').innerHTML = calculation;
-  localStorage.setItem('calculation', calculation);
-">=</button>
+  <button onclick="updateCalculator(' - ');">-</button>
+</div>
 
-  <br>
+
+  <div>
   <button onclick="updateCalculator('4');">4</button>
   <button onclick="updateCalculator('5');">5</button>
   <button onclick="updateCalculator('6');">6</button>
   <button onclick="updateCalculator(' * ');">*</button>
   <button onclick="updateCalculator(' / ');">/</button>
+  </div>
 
-  <br>
+  <div>
   <button onclick="updateCalculator('7');">7</button>
   <button onclick="updateCalculator('8');">8</button>
   <button onclick="updateCalculator('9');">9</button>
-  <button onclick="updateCalculator(' - ');">-</button>
-  <button onclick="updateCalculator(' . ');">.</button>
+  <button onclick="
+  calculation = eval(calculation);
+  document.querySelector('.calculatorDisplay').innerHTML = calculation;
+  localStorage.setItem('calculation', calculation);">
+    =
+  </button>
+  <button onclick=" calculation = '';
+    document.querySelector('.calculatorDisplay').innerHTML = 0;">C</button>
+  </div>
 
-<br>
-<button onclick=" calculation = '';
-document.querySelector('.calculatorDisplay').innerHTML = 0;">Clear</button>
   <script>
     let calculation = localStorage.getItem('calculation') || ''; 
 
